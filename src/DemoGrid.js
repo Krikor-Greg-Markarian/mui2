@@ -69,6 +69,18 @@ export default function BasicGrid() {
           </Grid>
         </Grid>
       </div>
+      ///////////////////////////////////////////////
+      <div>
+        <Grid container item xs={12}>
+          <Grid item xs={2}>
+            welcome.Anthony
+          </Grid>
+          <Grid item xs={8} />
+          <Grid item xs={2}>
+            logout
+          </Grid>
+        </Grid>
+      </div>
     </Box>
   );
 }

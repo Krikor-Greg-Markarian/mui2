@@ -43,12 +43,32 @@ export default function BasicGrid() {
           <Item>xs=8</Item>
         </Grid>
       </Grid>
-      ///////////////
-      <Grid container spacing={2}>
-        <Grid alignContent={"center"} item xs={12} sm={6} md={2}>
-          <Paper>xs=12</Paper>
+      ///////////////////////////////////////////////////////////
+      <div>
+        <Grid container spacing={2}>
+          <Grid alignContent={"center"} item xs={12}>
+            <Paper>xs=12</Paper>
+          </Grid>
+          <Grid alignContent={"center"} item xs={6}>
+            <Paper>xs=6</Paper>
+          </Grid>
+          <Grid alignContent={"center"} item xs={6}>
+            <Paper>xs=6</Paper>
+          </Grid>
+          <Grid alignContent={"center"} item xs={3}>
+            <Paper>xs=3</Paper>
+          </Grid>
+          <Grid alignContent={"center"} item xs={3}>
+            <Paper>xs=3</Paper>
+          </Grid>
+          <Grid alignContent={"center"} item xs={3}>
+            <Paper>xs=3</Paper>
+          </Grid>
+          <Grid alignContent={"center"} item xs={3}>
+            <Paper>xs=3</Paper>
+          </Grid>
         </Grid>
-      </Grid>
+      </div>
     </Box>
   );
 }

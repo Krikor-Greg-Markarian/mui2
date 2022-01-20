@@ -3,6 +3,10 @@ import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import { typography } from "@mui/system";
 import { Button, Grid, Paper, Typography } from "@mui/material";
 import { useState } from "react";
+import Switch from "@mui/material/Switch";
+import { dark } from "@material-ui/core/styles/createPalette";
+
+const label = { inputProps: { "aria-label": "Switch demo" } };
 
 export default function Home(props) {
   const [darkMode, setDarkMode] = useState(false);
@@ -12,6 +16,7 @@ export default function Home(props) {
       mode: darkMode ? "dark" : "light",
     },
   });
+
   return (
     <div className={styles.container}>
       <ThemeProvider theme={darkTheme}>
@@ -24,6 +29,11 @@ export default function Home(props) {
             <Button color='secondary' variant='contained'>
               this is my button
             </Button>
+            <Switch
+              {...label}
+              checked={darkMode}
+              onChange={() => setDarkMode(!darkMode)}
+            />
           </Grid>
         </Paper>
       </ThemeProvider>

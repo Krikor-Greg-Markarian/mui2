@@ -23,10 +23,10 @@ export default function Home(props) {
         <Paper style={{ height: "100vh" }}>
           <Grid container direction='column'>
             <Typography variant='h3'>this is my typography</Typography>
-            <Button color='primary' variant='contained'>
+            <Button variant='contained' color='primary'>
               this is my button
             </Button>
-            <Button color='secondary' variant='contained'>
+            <Button variant='contained' color='secondary'>
               this is my button
             </Button>
             <Switch

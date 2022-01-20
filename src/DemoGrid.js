@@ -83,6 +83,14 @@ export default function BasicGrid() {
           <Grid item xs={12}>
             -------------------
           </Grid>
+          <Grid item xs={12}>
+            <Divider />
+          </Grid>
+          <Grid container item xs={12}>
+            <Grid item xs={6}>
+              
+            </Grid>
+          </Grid>
         </Grid>
       </div>
     </Box>

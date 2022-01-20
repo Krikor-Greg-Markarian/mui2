@@ -6,6 +6,7 @@ import Grid from "@mui/material/Grid";
 import { dividerClasses } from "@mui/material";
 import { textAlign } from "@mui/system";
 import { makeStyles } from "@material-ui/styles";
+import Divider from "@material-ui/core/Divider";
 
 // const useStyles = makeStyles((theme => ({
 //   root: {
@@ -78,6 +79,9 @@ export default function BasicGrid() {
           <Grid item xs={8} />
           <Grid item xs={2}>
             logout
+          </Grid>
+          <Grid item xs={12}>
+            -------------------
           </Grid>
         </Grid>
       </div>

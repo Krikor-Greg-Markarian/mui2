@@ -81,7 +81,7 @@ export default function BasicGrid() {
             logout
           </Grid>
           <Grid item xs={12}>
-            -------------------
+            -
           </Grid>
           <Grid item xs={12}>
             <Divider />

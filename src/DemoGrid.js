@@ -5,17 +5,17 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { dividerClasses } from "@mui/material";
 import { textAlign } from "@mui/system";
-import { makeStyles } from "@mui/material";
+import { makeStyles } from "@material-ui/styles";
 
-// const useStyles = makeStyles((theme) => ({
+// const useStyles = makeStyles((theme => ({
 //   root: {
-//     flexGrow: 1,
+//     flexGrow: 1
 //   },
 //   paper: {
-//     pading: theme.spacing(2),
+//     padding: theme.spacing(2),
 //     textAlign: "center",
-//     color: theme.palette.text.secondary,
-//   },
+//     color: theme.palette.text.secondary
+//   }
 // }));
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -26,7 +26,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function BasicGrid() {
-  // const classes = useStyles();
+  const classes = useStyles();
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>

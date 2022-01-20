@@ -47,10 +47,10 @@ export default function BasicGrid() {
       ///////////////////////////////////////////////////////////
       <div>
         <Grid container spacing={2}>
-          <Grid alignContent={"center"} item xs={12}>
+          <Grid item xs={12}>
             <Paper>xs=12</Paper>
           </Grid>
-          <Grid alignContent={"center"} item xs={6}>
+          <Grid item xs={6}>
             <Paper>xs=6</Paper>
           </Grid>
           <Grid alignContent={"center"} item xs={6}>
@@ -86,7 +86,13 @@ export default function BasicGrid() {
           <Grid item xs={12}>
             <Divider />
           </Grid>
-          <Grid container item xs={12}>
+          <Grid
+            justifyContent='center'
+            alignItems='center'
+            container
+            item
+            xs={12}
+          >
             <Grid item xs={6}>
               What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the
               printing and typesetting industry. Lorem Ipsum has been the

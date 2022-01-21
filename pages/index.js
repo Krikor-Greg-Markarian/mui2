@@ -1,10 +1,8 @@
 import styles from "../styles/Home.module.css";
-import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
-import { typography } from "@mui/system";
-import { Button, Container, Grid, Paper, Typography } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { Button, Grid, Paper, Typography } from "@mui/material";
 import { useState } from "react";
 import Switch from "@mui/material/Switch";
-import { dark } from "@material-ui/core/styles/createPalette";
 import DemoGrid from "../src/DemoGrid";
 import { Card } from "@mui/material";
 
@@ -41,7 +39,9 @@ export default function Home(props) {
       </ThemeProvider>
       /////////////////////////////////////////////
       <DemoGrid />
-    
+      <div>
+        <Card />
+      </div>
     </div>
   );
 }

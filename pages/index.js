@@ -5,10 +5,20 @@ import { useState } from "react";
 import Switch from "@mui/material/Switch";
 import DemoGrid from "../src/DemoGrid";
 import Card from "../src/Card";
+import { makeStyles } from "@material-ui/styles";
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
+const useStyles = makeStyles({
+  CardContainer: {
+    paddingLeft: "20px",
+    paddingRight: "20px",
+  },
+});
+
 export default function Home(props) {
+  const classes = useStyles();
+
   const [darkMode, setDarkMode] = useState(false);
 
   const darkTheme = createTheme({
@@ -40,7 +50,13 @@ export default function Home(props) {
       //////////////////////////////////////////////////////////////////
       <DemoGrid />
       <div>
-        <Grid spacing={2} container direcion='column'>
+        <Grid
+          justifyContent='center'
+          className={classes.CardContainer}
+          spacing={2}
+          container
+          direcion='column'
+        >
           <Grid item xs={12} sm={6} md={4}>
             <Card />
           </Grid>

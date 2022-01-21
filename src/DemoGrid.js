@@ -46,7 +46,7 @@ export default function BasicGrid() {
           <Item>xs=8</Item>
         </Grid>
       </Grid>
-      ///////////////////////////////////////////////////////////
+      //////////////////////////////////////////////////////////////////
       <div>
         <Grid container spacing={2}>
           <Grid item xs={12}>
@@ -72,7 +72,7 @@ export default function BasicGrid() {
           </Grid>
         </Grid>
       </div>
-      ///////////////////////////////////////////////
+      //////////////////////////////////////////////////////////////////
       <div>
         <Grid container item xs={12}>
           <Grid item xs={2}>

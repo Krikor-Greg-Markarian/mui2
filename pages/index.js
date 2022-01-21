@@ -6,6 +6,7 @@ import { useState } from "react";
 import Switch from "@mui/material/Switch";
 import { dark } from "@material-ui/core/styles/createPalette";
 import DemoGrid from "../src/DemoGrid";
+import { Card } from "@mui/material";
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
@@ -38,8 +39,9 @@ export default function Home(props) {
           </Grid>
         </Paper>
       </ThemeProvider>
-      ///////////////////////////////
+      /////////////////////////////////////////////
       <DemoGrid />
+    
     </div>
   );
 }

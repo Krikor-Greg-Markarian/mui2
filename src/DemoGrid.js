@@ -115,8 +115,13 @@ export default function BasicGrid() {
           </Grid>
         </Grid>
       </div>
-      <Grid container justifyContent='center'>
-        <Grid item xs={12} style = {{textAlign:"center"}}>
+      <Grid
+        container
+        direction='column'
+        justifyContent='center'
+        alignItems='flex-end'
+      >
+        <Grid item xs={12} style={{ textAlign: "center" }}>
           <AcUnitIcon color='primary' />
         </Grid>
         <Grid item>

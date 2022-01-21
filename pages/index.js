@@ -43,7 +43,7 @@ export default function Home(props) {
         <Grid spacing={2} container direcion='column'>
           <Grid item xs={12} sm={6} md={4}>
             <Card />
-          </Grid>{" "}
+          </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <Card />
           </Grid>

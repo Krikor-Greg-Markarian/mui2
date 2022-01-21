@@ -129,6 +129,10 @@ export default function BasicGrid() {
           <AcUnitIcon color='secondary' />
         </Grid>
       </Grid>
+      <div>
+        <h1>Hello CodeSandbox</h1>
+        <h1>Start editing to see some magic happenning!</h1>
+      </div>
     </Box>
   );
 }

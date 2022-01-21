@@ -120,6 +120,7 @@ export default function BasicGrid() {
         direction='column'
         justifyContent='center'
         alignItems='flex-end'
+        style={{ height: "100px" }}
       >
         <Grid item xs={12} style={{ textAlign: "center" }}>
           <AcUnitIcon color='primary' />

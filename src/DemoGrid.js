@@ -86,13 +86,7 @@ export default function BasicGrid() {
           <Grid item xs={12}>
             <Divider />
           </Grid>
-          <Grid
-            justifyContent='center'
-            alignItems='center'
-            container
-            item
-            xs={12}
-          >
+          <Grid container item xs={12}>
             <Grid item xs={6}>
               What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the
               printing and typesetting industry. Lorem Ipsum has been the

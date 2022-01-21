@@ -7,6 +7,7 @@ import { dividerClasses } from "@mui/material";
 import { textAlign } from "@mui/system";
 import { makeStyles } from "@material-ui/styles";
 import Divider from "@material-ui/core/Divider";
+import AcUnitIcon from "@material-ui/icons/AcUnit";
 
 // const useStyles = makeStyles((theme => ({
 //   root: {
@@ -114,6 +115,14 @@ export default function BasicGrid() {
           </Grid>
         </Grid>
       </div>
+      <Grid container>
+        <Grid item>
+          <AcUnitIcon color='primary' />
+        </Grid>
+        <Grid item>
+          <AcUnitIcon color='secondary' />
+        </Grid>
+      </Grid>
     </Box>
   );
 }

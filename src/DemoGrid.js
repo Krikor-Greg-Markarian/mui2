@@ -21,6 +21,12 @@ import { Card } from "@mui/material";
 //   }
 // }));
 
+const useStyles = makeStyles({
+  divStyles: {
+    padding: "20px",
+  },
+});
+
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   padding: theme.spacing(1),
@@ -29,7 +35,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function BasicGrid() {
-  // const classes = useStyles();
+  const classes = useStyles();
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
@@ -130,10 +136,12 @@ export default function BasicGrid() {
           <AcUnitIcon color='secondary' />
         </Grid>
       </Grid>
-      <div>
+      <Divider />
+      <div className={classes.divStyles}>
         <h1>Hello CodeSandbox</h1>
         <h1>Start editing to see some magic happenning!</h1>
       </div>
+      <Divider />
     </Box>
   );
 }

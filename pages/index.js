@@ -7,6 +7,7 @@ import DemoGrid from "../src/DemoGrid";
 import Card from "../src/Card";
 import { makeStyles } from "@material-ui/styles";
 
+
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
 const useStyles = makeStyles({
@@ -77,6 +78,7 @@ export default function Home(props) {
           </Grid>
         </Grid>
       </div>
+      
     </div>
   );
 }

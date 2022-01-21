@@ -4,7 +4,7 @@ import { Button, Grid, Paper, Typography } from "@mui/material";
 import { useState } from "react";
 import Switch from "@mui/material/Switch";
 import DemoGrid from "../src/DemoGrid";
-import { Card } from "@mui/material";
+import Card from "../src/Card";
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
@@ -40,7 +40,26 @@ export default function Home(props) {
       //////////////////////////////////////////////////////////////////
       <DemoGrid />
       <div>
-        <Card />
+        <Grid spacing = {2} container direcion='column'>
+          <Grid item xs={12} sm={6} md={4}>
+            <Card />
+          </Grid>{" "}
+          <Grid item xs={12} sm={6} md={4}>
+            <Card />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <Card />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <Card />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <Card />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <Card />
+          </Grid>
+        </Grid>
       </div>
     </div>
   );

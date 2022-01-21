@@ -7,13 +7,15 @@ import DemoGrid from "../src/DemoGrid";
 import Card from "../src/Card";
 import { makeStyles } from "@material-ui/styles";
 
-
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
 const useStyles = makeStyles({
   CardContainer: {
     paddingLeft: "20px",
     paddingRight: "20px",
+  },
+  boxStyle: {
+    marginTop: "20px",
   },
 });
 
@@ -50,7 +52,7 @@ export default function Home(props) {
       </ThemeProvider>
       //////////////////////////////////////////////////////////////////
       <DemoGrid />
-      <div>
+      <div className={classes.boxStyle}>
         <Grid
           justifyContent='center'
           className={classes.CardContainer}
@@ -78,7 +80,17 @@ export default function Home(props) {
           </Grid>
         </Grid>
       </div>
-      
+      <div className={classes.boxStyle}></div>
+      <div className={classes.boxStyle}></div>
+      <div className={classes.boxStyle}></div>
+      <div className={classes.boxStyle}></div>
+      <div className={classes.boxStyle}></div>
+      <div className={classes.boxStyle}></div>
+      <div className={classes.boxStyle}></div>
+      <div className={classes.boxStyle}></div>
+      <div className={classes.boxStyle}></div>
+      <div className={classes.boxStyle}></div>
+      <div className={classes.boxStyle}></div>
     </div>
   );
 }

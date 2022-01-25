@@ -7,8 +7,7 @@ import DemoGrid from "../src/DemoGrid";
 import Card from "../src/Card";
 import SweetsTable from "../src/SweetsTable";
 import { makeStyles } from "@material-ui/styles";
-import { Router } from "react-router-dom";
-import { createBrowserHistory } from "history";
+import ExampleTab from "../src/ExampleTab"
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
@@ -86,11 +85,13 @@ export default function Home(props) {
       <div className={classes.boxStyle}>
         <SweetsTable />
       </div>
-      <div style={{ margin: 0, height: "100%" }} className={classes.boxStyle}>
-        adssadsadsadsad
+      
+      <div className={classes.boxStyle}>
+        <ExampleTab/>
       </div>
-      <div className={classes.boxStyle}></div>
-      <div className={classes.boxStyle}></div>
+      <div className={classes.boxStyle}>
+        
+      </div>
       <div className={classes.boxStyle}></div>
       <div className={classes.boxStyle}></div>
       <div className={classes.boxStyle}></div>

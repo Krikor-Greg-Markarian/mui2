@@ -1,6 +1,12 @@
 import styles from "../styles/Home.module.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Button, Grid, Paper, Typography } from "@mui/material";
+import {
+  Button,
+  Grid,
+  Paper,
+  TablePagination,
+  Typography,
+} from "@mui/material";
 import { useState } from "react";
 import Switch from "@mui/material/Switch";
 import DemoGrid from "../src/DemoGrid";
@@ -34,12 +40,6 @@ export default function Home(props) {
       mode: darkMode ? "dark" : "light",
     },
   });
-
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
 
   return (
     <div className={styles.container}>
@@ -97,7 +97,9 @@ export default function Home(props) {
       <div className={classes.boxStyle}>
         <HomePage />
       </div>
-      <div className={classes.boxStyle}></div>
+      <div className={classes.boxStyle}>
+        <TablePagination />
+      </div>
       <div className={classes.boxStyle}></div>
       <div className={classes.boxStyle}></div>
       <div className={classes.boxStyle}></div>

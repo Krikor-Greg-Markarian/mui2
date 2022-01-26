@@ -10,8 +10,7 @@ import { makeStyles } from "@material-ui/styles";
 import ExampleTab from "../src/ExampleTab";
 
 import React from "react";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
+import HomePage from "../src/HomePage";
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
@@ -96,9 +95,8 @@ export default function Home(props) {
         <SweetsTable />
       </div>
       <div className={classes.boxStyle}>
-        <ExampleTab />
+        <HomePage />
       </div>
-      <div className={classes.boxStyle}></div>
       <div className={classes.boxStyle}></div>
       <div className={classes.boxStyle}></div>
       <div className={classes.boxStyle}></div>

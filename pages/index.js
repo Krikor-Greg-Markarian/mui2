@@ -98,17 +98,6 @@ export default function Home(props) {
       <div className={classes.boxStyle}>
         <ExampleTab />
       </div>
-      <div className={classes.boxStyle}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label='basic tabs example'
-        >
-          <Tab label='Item One' />
-          <Tab label='Item Two' />
-          <Tab label='Item Three' />
-        </Tabs>
-      </div>
       <div className={classes.boxStyle}></div>
       <div className={classes.boxStyle}></div>
       <div className={classes.boxStyle}></div>

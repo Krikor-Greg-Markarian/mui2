@@ -7,7 +7,11 @@ import DemoGrid from "../src/DemoGrid";
 import Card from "../src/Card";
 import SweetsTable from "../src/SweetsTable";
 import { makeStyles } from "@material-ui/styles";
-import ExampleTab from "../src/ExampleTab"
+import ExampleTab from "../src/ExampleTab";
+
+import React from "react";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
@@ -31,6 +35,12 @@ export default function Home(props) {
       mode: darkMode ? "dark" : "light",
     },
   });
+
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
   return (
     <div className={styles.container}>
@@ -85,12 +95,19 @@ export default function Home(props) {
       <div className={classes.boxStyle}>
         <SweetsTable />
       </div>
-      
       <div className={classes.boxStyle}>
-        <ExampleTab/>
+        <ExampleTab />
       </div>
       <div className={classes.boxStyle}>
-        
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          aria-label='basic tabs example'
+        >
+          <Tab label='Item One' />
+          <Tab label='Item Two' />
+          <Tab label='Item Three' />
+        </Tabs>
       </div>
       <div className={classes.boxStyle}></div>
       <div className={classes.boxStyle}></div>
